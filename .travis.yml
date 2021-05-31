@@ -10,10 +10,10 @@ services:
 jobs:
   include:
     - stage: build
-      script: ./gradlew -PuseInstalledNvm=true build
+      script: ./certificates/add-to-keystore.sh && ./gradlew -PuseInstalledNvm=true build
       if: tag IS blank
     - stage: deploy
-      script: ./certificates/add-to-keystore.sh && ./gradlew -PuseInstalledNvm=true  build publish && ./docker-ci.sh
+      script: ./certificates/add-to-keystore.sh && ./gradlew -PuseInstalledNvm=true build publish && ./docker-ci.sh
       if: tag IS present
   
 cache:
