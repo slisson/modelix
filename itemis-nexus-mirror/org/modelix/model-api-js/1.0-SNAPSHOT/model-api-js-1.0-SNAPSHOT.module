@@ -1,0 +1,87 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../model-api/1.0-SNAPSHOT/model-api-1.0-SNAPSHOT.module",
+    "group": "org.modelix",
+    "module": "model-api",
+    "version": "1.0-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.6",
+      "buildId": "pur5cny77zdotgsvkzxnfvbog4"
+    }
+  },
+  "variants": [
+    {
+      "name": "jsApiElements-published",
+      "attributes": {
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.js.compiler": "legacy",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "files": [
+        {
+          "name": "model-api-js-1.0-SNAPSHOT.jar",
+          "url": "model-api-js-1.0-SNAPSHOT.jar",
+          "size": 35139,
+          "sha512": "4331b33ed9145634e0233696f0817fd6009b6c561286de5e5c366759f99f0aee80351747a1fbfeb48d492733fd3d20fac7db897fa19922b0c161c7dd75639257",
+          "sha256": "862623ba2dfaacea6e4abff80349d77dfd7940fc5395356c54a8cf605b3fec60",
+          "sha1": "ce18bb6d9b9e228401c154787c04c76b5011f355",
+          "md5": "876140ab419c642be479205862131eca"
+        }
+      ]
+    },
+    {
+      "name": "jsRuntimeElements-published",
+      "attributes": {
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "legacy",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-js",
+          "version": {
+            "requires": "1.4.31"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-common",
+          "version": {
+            "requires": "1.4.31"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "model-api-js-1.0-SNAPSHOT.jar",
+          "url": "model-api-js-1.0-SNAPSHOT.jar",
+          "size": 35139,
+          "sha512": "4331b33ed9145634e0233696f0817fd6009b6c561286de5e5c366759f99f0aee80351747a1fbfeb48d492733fd3d20fac7db897fa19922b0c161c7dd75639257",
+          "sha256": "862623ba2dfaacea6e4abff80349d77dfd7940fc5395356c54a8cf605b3fec60",
+          "sha1": "ce18bb6d9b9e228401c154787c04c76b5011f355",
+          "md5": "876140ab419c642be479205862131eca"
+        }
+      ]
+    },
+    {
+      "name": "metadataApiElements-published",
+      "attributes": {
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.platform.type": "common"
+      },
+      "available-at": {
+        "url": "../../model-api-metadata/1.0-SNAPSHOT/model-api-metadata-1.0-SNAPSHOT.module",
+        "group": "org.modelix",
+        "module": "model-api-metadata",
+        "version": "1.0-SNAPSHOT"
+      }
+    }
+  ]
+}
