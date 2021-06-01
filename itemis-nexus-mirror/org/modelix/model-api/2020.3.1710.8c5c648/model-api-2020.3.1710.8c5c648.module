@@ -3,15 +3,15 @@
   "component": {
     "group": "org.modelix",
     "module": "model-api",
-    "version": "1.0-SNAPSHOT",
+    "version": "2020.3.1710.8c5c648",
     "attributes": {
-      "org.gradle.status": "integration"
+      "org.gradle.status": "release"
     }
   },
   "createdBy": {
     "gradle": {
       "version": "6.6",
-      "buildId": "pur5cny77zdotgsvkzxnfvbog4"
+      "buildId": "splibn6r3ze6leak4qllkltip4"
     }
   },
   "variants": [
@@ -23,13 +23,13 @@
       },
       "files": [
         {
-          "name": "model-api-metadata-1.0-SNAPSHOT.jar",
-          "url": "model-api-1.0-SNAPSHOT.jar",
+          "name": "model-api-metadata-2020.3.1710.8c5c648.jar",
+          "url": "model-api-2020.3.1710.8c5c648.jar",
           "size": 24750,
-          "sha512": "4f7e2083ed82bd996bf4ade594eca6ca8d2ccb9b7f0e6a0040f1baa9f0b243eae7a44acaf9bb86271a3ec501df8537c6b8e7197e1b5addef9089ae6b5d71753a",
-          "sha256": "7e1d32247856e909c9266f8b2564d83c08c1953894ec8fb3207739c65fe7f3da",
-          "sha1": "48aa156a9d4370218b871878d0b08629539437ac",
-          "md5": "8415cc6a380cf4d09480ea9120023736"
+          "sha512": "32f8d71f7057c8b60b4cfc64c84eb09297c626ffafa871e9e4202527a49b8d90bd537700c697f74ed308b458a6176da1fca7ed7ef8cf5d10bdea581db728c5e6",
+          "sha256": "809cca9fb2ec155c9df2504e4a44cfb7abc76d59402890c63c03a485d24c1008",
+          "sha1": "4af01df3bda68a414702cbdff4d01919bb8d75a0",
+          "md5": "c0b26fb829cee8416bed55f1e426a826"
         }
       ]
     },
@@ -41,10 +41,10 @@
         "org.jetbrains.kotlin.platform.type": "js"
       },
       "available-at": {
-        "url": "../../model-api-js/1.0-SNAPSHOT/model-api-js-1.0-SNAPSHOT.module",
+        "url": "../../model-api-js/2020.3.1710.8c5c648/model-api-js-2020.3.1710.8c5c648.module",
         "group": "org.modelix",
         "module": "model-api-js",
-        "version": "1.0-SNAPSHOT"
+        "version": "2020.3.1710.8c5c648"
       }
     },
     {
@@ -55,10 +55,10 @@
         "org.jetbrains.kotlin.platform.type": "js"
       },
       "available-at": {
-        "url": "../../model-api-js/1.0-SNAPSHOT/model-api-js-1.0-SNAPSHOT.module",
+        "url": "../../model-api-js/2020.3.1710.8c5c648/model-api-js-2020.3.1710.8c5c648.module",
         "group": "org.modelix",
         "module": "model-api-js",
-        "version": "1.0-SNAPSHOT"
+        "version": "2020.3.1710.8c5c648"
       }
     },
     {
@@ -69,10 +69,10 @@
         "org.jetbrains.kotlin.platform.type": "jvm"
       },
       "available-at": {
-        "url": "../../model-api-jvm/1.0-SNAPSHOT/model-api-jvm-1.0-SNAPSHOT.module",
+        "url": "../../model-api-jvm/2020.3.1710.8c5c648/model-api-jvm-2020.3.1710.8c5c648.module",
         "group": "org.modelix",
         "module": "model-api-jvm",
-        "version": "1.0-SNAPSHOT"
+        "version": "2020.3.1710.8c5c648"
       }
     },
     {
@@ -83,10 +83,10 @@
         "org.jetbrains.kotlin.platform.type": "jvm"
       },
       "available-at": {
-        "url": "../../model-api-jvm/1.0-SNAPSHOT/model-api-jvm-1.0-SNAPSHOT.module",
+        "url": "../../model-api-jvm/2020.3.1710.8c5c648/model-api-jvm-2020.3.1710.8c5c648.module",
         "group": "org.modelix",
         "module": "model-api-jvm",
-        "version": "1.0-SNAPSHOT"
+        "version": "2020.3.1710.8c5c648"
       }
     }
   ]
