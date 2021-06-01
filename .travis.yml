@@ -10,11 +10,17 @@ services:
 jobs:
   include:
     - stage: build
-      script: ./gradlew -Djavax.net.debug=ssl:handshake:verbose:keymanager:trustmanager -Djava.security.debug=access:stack -Djavax.net.ssl.trustStore=certificates/cacerts -Djavax.net.ssl.trustStorePassword=changeit -PuseInstalledNvm=true build
+      script: ./gradlew -PuseInstalledNvm=true build
       if: tag IS blank
+      before_install:
+        - rm "${JAVA_HOME}/lib/security/cacerts"
+        - ln -s /etc/ssl/certs/java/cacerts "${JAVA_HOME}/lib/security/cacerts"
     - stage: deploy
       script: ./gradlew -Djavax.net.ssl.trustStore=certificates/cacerts -Djavax.net.ssl.trustStorePassword=changeit -PuseInstalledNvm=true build publish && ./docker-ci.sh
       if: tag IS present
+      before_install:
+        - rm "${JAVA_HOME}/lib/security/cacerts"
+        - ln -s /etc/ssl/certs/java/cacerts "${JAVA_HOME}/lib/security/cacerts"
   
 cache:
   directories:
