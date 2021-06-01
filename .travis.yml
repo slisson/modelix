@@ -10,7 +10,7 @@ services:
 jobs:
   include:
     - stage: build
-      script: ./gradlew -Djavax.net.debug=ssl:handshake:keymanager:trustmanager:session:certpath -Djavax.net.ssl.trustStore=certificates/cacerts -Djavax.net.ssl.trustStorePassword=changeit -PuseInstalledNvm=true build
+      script: ./gradlew -Djavax.net.debug=ssl:handshake:verbose:keymanager:trustmanager -Djava.security.debug=access:stack -Djavax.net.ssl.trustStore=certificates/cacerts -Djavax.net.ssl.trustStorePassword=changeit -PuseInstalledNvm=true build
       if: tag IS blank
     - stage: deploy
       script: ./gradlew -Djavax.net.ssl.trustStore=certificates/cacerts -Djavax.net.ssl.trustStorePassword=changeit -PuseInstalledNvm=true build publish && ./docker-ci.sh
