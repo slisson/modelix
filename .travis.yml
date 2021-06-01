@@ -3,6 +3,7 @@ install: true
 
 jdk: 
   - openjdk11
+  - openjdk13
 
 services:
   - docker
